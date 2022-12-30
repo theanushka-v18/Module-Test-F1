@@ -6,6 +6,8 @@ function submitForm() {
     let contractReason = document.getElementById('reason').value;
 
     if((firstname != "") && (lastname != "") && (userEmail != "") && (contractReason != "")) {
-        alert("Form submitted successfully!");
+        if(userEmail.match('@')) {
+            alert("Form submitted successfully!");
+        }
     }
 }
