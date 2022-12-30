@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+/* ********** RESETS ************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /* color: #ffffff; */
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* ************** UTILITY CLASSES ************* */
+
+.container {
+    /* border: 1px solid red; */
+    margin-top: 10rem;
+    width: 90vw;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* *********** NAVBAR STYLES ************* */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    border-bottom: 1px solid #ffffff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.navbar {
+    height: 8vh;
+    width: 95%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.company-logo p {
+    color: #ffffff;
+}
+
+.nav-links {
+    width: 25rem;
+}
+
+/* *********** HERO SECION STYLES ************* */
+#hero-section {
+    position: relative;
+    top: 8vh;
+    background-color: #000000;
+    height: 92vh;
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    top: 8vh;
+    padding: 1rem;
+}
+
+.hero-container a {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.hero-top {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.main-heading {
+    width: 36rem;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+
+.main-heading h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    line-height: 1.3;
+    animation: text-animate 2s ease 1s infinite;
+    color: #ffffff;
+}
+@keyframes text-animate {
+    0% {
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 0.25;
+        color: rgb(138, 255, 255);
+    }
+    50% {
+        opacity: 0.5;
+        color: rgb(255, 255, 138);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-img {
+    margin-right: 5rem;
+}
+
+.hero-img img {
+    width: 25rem;
+    margin-left: -4rem;
+}
+
+/* *********** ABOUT US SECION STYLES ************* */
+#aboutUs {
+    position: relative;
+    top: 35vh;
+    padding: 5rem 1rem;
+}
+
+.about-container {
+    column-gap: 5rem;
+}
+
+.about-img img{
+    width: 20rem;
+}
+
+.about-text {
+    width: 50rem;
+}
+
+.about-text h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+} 
+
+.about-text p {
+    color: #000000;
+    margin-top: 2rem;
+}
+
+/* *********** OUR SERVICES SECION STYLES ************* */
+#ourServices {
+    position: relative;
+    top: 50vh;
+    padding: 5rem 1rem;
+}
+
+#ourServices h2 {
+    color: #000000;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-left: 2.5rem;
+}
+
+.card-container {
+    margin-left: 2.5rem;
+    margin-top: 3rem;
+    display: flex;
+    column-gap: 3rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.card-container .cards {
+    border: 1px solid #000000;
+    padding: 1.5rem;
+}
+
+.cards > h3 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.cards > p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.cards:hover {
+    color: #ffffff;
+    background-color: #000000;
+    transition: all 0.3s ease;
+}
+
+/* *********** CoNTACT US SECION STYLES ************* */
+#contactUs {
+    background-color: #000000;
+    position: relative;
+    top: 65vh;
+    padding: 1rem;
+}
+
+.contact-container {
+    row-gap: 4rem;
+}
+
+.contact-heading h2 {
+    color: #ffffff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.contact-form {
+    margin: auto;
+}
+
+.contact-form input {
+    display: block;
+    width: 50rem;
+    padding: 0.7rem;
+    margin-bottom: 1.5rem;
+    background-color: #000000;
+    outline: none;
+    border: none;
+    border: 1px solid #ffffff;
+}
+
+.contact-form input[type="text"] {
+    color: #ffffff;
+}
+
+.contact-form input[type="email"] {
+    color: #ffffff;
+}
+
+.contact-form input::placeholder {
+    color: #ffffff;
+}
+
+.contact-form button {
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+.contact-form button:hover {
+    cursor: pointer;
+}
+
+/* *********** MEDIA QUERIES ************* */
+
+
+@media  screen and (min-width: 1025px) and (max-width: 1200px) {
+    .about-text p {
+        margin-top: 1rem;
+    }
+    .about-text h2 {
+        font-size: 3.5rem;
+    } 
+    #ourServices h2 {
+        font-size: 3.5rem;
+        margin-left: 2.5rem;
+    }
+    .contact-heading h2 {
+        font-size: 3.5rem;
+    }
+    .hero-img img {
+        width: 22rem;
+    }
+    .main-heading h1 {
+        font-size: 5.3rem;
+    }
+}    
+
+@media  screen and (min-width: 769px) and (max-width: 1024px) {
+    #aboutUs {
+        top: 30vh;
+    }
+    #ourServices {
+        top: 40vh;
+    }
+    .about-text {
+        width: 35rem;
+    }
+    .about-text p {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .cards > p {
+        font-size: 0.8rem;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .about-text h2 {
+        font-size: 3rem;
+        text-align: center;
+    } 
+    #ourServices h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .contact-heading h2 {
+        font-size: 3.5rem;
+        /* margin-top: 4rem; */
+    }
+    .card-container {
+        column-gap: 2rem;
+    }
+    #contactUs {
+        top: 55vh;
+    }
+    .contact-form input {
+        width: 40rem;
+        padding: 0.7rem;
+    }
+    .about-img img{
+        width: 25rem;
+        height: 20rem;
+    }
+    .hero-img {
+        margin-left: -4rem;
+    }
+    .hero-img img {
+        width: 18rem;
+        margin-left: 0;
+    }
+    .main-heading {
+        margin-left: 2rem;
+    }
+    .main-heading h1 {
+        font-size: 5rem;
+        line-height: 1.2;
+    }
+}    
+
+@media  screen and (min-width: 481px) and (max-width: 768px) {
+    #aboutUs {
+        top: 30vh;
+    }
+
+    #ourServices {
+        top: 40vh;
+    }
+    .about-text {
+        width: 35rem;
+    }
+    .about-text p {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .cards > p {
+        font-size: 0.8rem;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .about-text h2 {
+        font-size: 3rem;
+        text-align: center;
+    } 
+    #ourServices h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .contact-heading h2 {
+        font-size: 3rem;
+        /* margin-top: 4rem; */
+    }
+    .card-container {
+        column-gap: 1rem;
+        margin-left: 0;
+    }
+    #contactUs {
+        top: 55vh;
+    }
+    .contact-form input {
+        width: 40rem;
+        padding: 0.7rem;
+    }
+    .about-img img{
+        width: 25rem;
+        height: 20rem;
+    }
+    #hero-section {
+        height: 115vh;
+    }
+    .hero-top {
+        flex-direction: column;
+        margin: auto;
+    }
+    /* .hero-img {
+        margin-left: -4rem;
+    } */
+    .hero-img img {
+        width: 18rem;
+        /* margin-left: 0; */
+        margin-right: 2rem;
+    }
+    .main-heading {
+        width: 29rem;
+    }
+    .main-heading h1 {
+        font-size: 4.5rem;
+    } 
+}
+
+@media screen and (max-width: 684px) {
+    .contact-form input {
+        width: 35rem;
+        padding: 0.7rem;
+    }
+    .cards > h3 {
+        font-size: 1.5rem;
+    }
+    .cards > p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 684px) {
+    .contact-form input {
+        width: 32rem;
+        padding: 0.7rem;
+    }
+    .card-container {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .about-text {
+        width: 30rem;
+    }
+    .about-text p {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .navbar {
+        flex-direction: column;
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width: 581px) {
+    .contact-form input {
+        width: 25rem;
+        padding: 0.7rem;
+    }
+    .about-text h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    } 
+    #ourServices h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .contact-heading h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media  screen and (min-width: 320px) and (max-width: 480px) {
+    #aboutUs {
+        top: 25vh;
+    }
+
+    #ourServices {
+        top: 30vh;
+    }
+    #contactUs {
+        top: 45vh;
+    }
+    .about-text {
+        width: 20rem;
+    }
+    .about-text p {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .cards > p {
+        font-size: 0.7rem;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        /* column-gap: 4rem; */
+    }
+    .about-img img {
+        width: 15rem;
+    }
+    .card-container {
+        column-gap: 1rem;
+        margin-left: -0.1rem;
+    }
+    .contact-form input {
+        width: 20rem;
+        padding: 0.7rem;
+    }
+    .nav-links {
+        width: 20rem;
+    }
+    .nav-links li {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .nav-links {
+        width: 16rem;
+    }
+    .nav-links li {
+        font-size: 0.7rem;
+    }
+    .contact-form input {
+        width: 15rem;
+        padding: 0.7rem;
+    }
+    .about-text {
+        width: 15rem;
+    }
+    .about-text p {
+        font-size: 0.6rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .cards > p {
+        font-size: 0.6rem;
+    }
+    .contact-form button {
+        padding: 0.4rem 2rem;
+        font-size: 1rem;
+    }
+    .about-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    } 
+    #ourServices h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .contact-heading h2 {
+        font-size: 2rem;
+        /* margin-top: 4rem; */
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Module test F1</title>
+</head>
+<body>
+
+    <!-- *************** NAVBAR SECTION **************** -->
+    <header>
+        <nav class="navbar flex justify-between align-center">
+            <div class="company-logo">
+                <p>Business Name</p>
+            </div>
+            <div class="nav-links">
+                <ul class="flex justify-between">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#ourServices">Our Services</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- *************** HERO SECTION **************** -->
+    <section id="hero-section">
+        <div class="container hero-container flex flex-direction-column">
+            <div class="hero-top flex">
+                <div class="main-heading">
+                    <h1>Business Landing Page</h1>
+                </div>
+                <div class="hero-img">
+                    <img src="./images/pngegg 1.png" alt="A Laptop Image">
+                </div>
+            </div>
+            <a class="justify-center" href="#ourServices"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </section>
+    <!-- *************** ABOUT US SECTION **************** -->
+    <sction id="aboutUs">
+        <div class="container about-container flex justify-between">
+            <div class="about-img">
+                <img src="./images/pexels-hidden-couple-3048527 1.png" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </sction>
+
+    <!-- *************** OUR SERVICES SECTION **************** -->
+    <section id="ourServices">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="cards">
+                <h3>Service 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="cards">
+                <h3>Service 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="cards">
+                <h3>Service 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- *************** CONTACT US SECTION **************** -->
+    <section id="contactUs">
+        <div class="container contact-container flex flex-direction-column">
+            <div class="contact-heading">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-form">
+                <form id="form">
+                    <input type="text" name="fname" placeholder="Full Name" id="fname" required>
+                    <input type="text" name="lname" placeholder="Last Name" id="lname" required>
+                    <input type="email" name="email" placeholder="Email Address" id="email" required>
+                    <input type="text" name="reason" placeholder="Reason for Contracting" id="reason" required>
+                    <button type="submit" onclick="submitForm()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/045b64dbec.js" crossorigin="anonymous"></script>
+</body>
+</html>
